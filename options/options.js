@@ -42,7 +42,7 @@ class BookmarkManager {
     try {
       const result = await chrome.storage.local.get(['settings']);
       this.settings = result.settings || {
-        theme: 'light',
+        theme: 'dark',
         viewMode: 'card',
         itemsPerPage: 20,
         showDescriptions: true,
