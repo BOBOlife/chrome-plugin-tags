@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 -->
+  <circle cx="64" cy="64" r="60" fill="#1a73e8"/>
+  <circle cx="64" cy="64" r="56" fill="#ffffff" fill-opacity="0.1"/>
+  
+  <!-- 书签图标 -->
+  <path d="M36 24C36 21.7909 37.7909 20 40 20H88C90.2091 20 92 21.7909 92 24V100C92 102.209 90.2091 104 88 104C87.2756 104 86.5751 103.751 86.0169 103.299L64 85.5L41.9831 103.299C41.4249 103.751 40.7244 104 40 104C37.7909 104 36 102.209 36 100V24Z" fill="white"/>
+  
+  <!-- 装饰性卡片叠放效果 -->
+  <rect x="48" y="32" width="32" height="4" rx="2" fill="#1a73e8" fill-opacity="0.3"/>
+  <rect x="48" y="40" width="24" height="4" rx="2" fill="#1a73e8" fill-opacity="0.3"/>
+  <rect x="48" y="48" width="28" height="4" rx="2" fill="#1a73e8" fill-opacity="0.3"/>
+  
+  <!-- 标签图标 -->
+  <circle cx="75" cy="35" r="6" fill="#4285f4"/>
+  <circle cx="75" cy="35" r="2" fill="white"/>
+</svg>

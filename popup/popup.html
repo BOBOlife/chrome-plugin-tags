@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>快捷添加收藏</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-container">
+    <header class="popup-header">
+      <h1>添加到收藏夹</h1>
+      <button id="openManager" class="open-manager-btn" title="打开收藏管理器">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+          <circle cx="9" cy="9" r="2"/>
+          <path d="M21 15.5c-.6-.6-1.4-1-2.3-1s-1.7.4-2.3 1"/>
+        </svg>
+      </button>
+    </header>
+
+    <form id="addBookmarkForm" class="bookmark-form">
+      <div class="form-group">
+        <label for="title">标题</label>
+        <input type="text" id="title" name="title" required>
+      </div>
+
+      <div class="form-group">
+        <label for="url">网址</label>
+        <input type="url" id="url" name="url" required readonly>
+      </div>
+
+      <div class="form-group">
+        <label for="description">描述</label>
+        <textarea id="description" name="description" rows="3" placeholder="网页描述（可选）"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="folder">文件夹</label>
+        <select id="folder" name="folder">
+          <option value="">选择文件夹</option>
+          <option value="default">默认</option>
+        </select>
+        <button type="button" id="newFolder" class="new-folder-btn">新建</button>
+      </div>
+
+      <div class="form-group">
+        <label for="tags">标签</label>
+        <div class="tags-input">
+          <input type="text" id="tags" placeholder="输入标签，用空格分隔 (如: #AI #设计)">
+          <div class="tags-list" id="tagsList"></div>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="button" id="cancel" class="btn-secondary">取消</button>
+        <button type="submit" class="btn-primary">保存</button>
+      </div>
+    </form>
+
+    <div id="newFolderModal" class="modal hidden">
+      <div class="modal-content">
+        <h3>新建文件夹</h3>
+        <input type="text" id="newFolderName" placeholder="文件夹名称">
+        <div class="modal-actions">
+          <button type="button" id="cancelNewFolder" class="btn-secondary">取消</button>
+          <button type="button" id="confirmNewFolder" class="btn-primary">确认</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
